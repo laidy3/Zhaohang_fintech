@@ -1,4 +1,4 @@
-![](https://github.com/laidy3/fintech/tree/master/photos/title.png)
+![](https://github.com/laidy3/fintech/blob/master/photos/title.png)
 
 # 招商银行财经新闻分析
 队伍名：SYSU-laidy  
@@ -39,5 +39,5 @@ bm25模型定义
 停用词表
 
 # 结果
-![](https://github.com/laidy3/fintech/tree/master/photos/result.jpg)
+![](https://github.com/laidy3/fintech/blob/master/photos/result.jpg)
 
