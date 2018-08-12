@@ -1,9 +1,9 @@
-![](https://raw.githubusercontent.com/Roc-J/zhaoshang_economic_news/master/photos/title.png)
+![](https://github.com/laidy3/fintech/tree/master/photos/title.png)
 
 # 招商银行财经新闻分析
 队伍名：SYSU-laidy  
 最终成绩：0.1361 排名第1  
-算法模型：BM25+动态权重  
+算法模型：BM25+去停用词+动态权重  
 ## 赛题背景  
 
 [赛题连接](https://www.nowcoder.com/activity/2018cmbchina/bigdata/2)
@@ -14,8 +14,9 @@
 # 主要思路
 使用bm25算法+去停用词+动态权重  
 bm25经过调参成绩是0.12+，去停用词后成绩是0.129+
-去停用词时不要去掉数字和字幕，去掉人名如陈茂波等。  
-动态权重思路来自论文《A SIMPLE BUT TOUGH-TO-BEAT BASELINE FOR SEN- TENCE EMBEDDINGS》——[作者代码](https://github.com/PrincetonML/SIF)
+去停用词时不要去掉数字和字母。  
+动态权重思路来自论文《A SIMPLE BUT TOUGH-TO-BEAT BASELINE FOR SEN- TENCE EMBEDDINGS》——[作者代码](https://github.com/PrincetonML/SIF)  
+权重分配思路：对每条测试样例，分词的的权重都是0.5, 再针对性的给部分分词给于较高权重(0.8、0.9)如德国地质、美国纽约联储Nowcast，部分分词给于较低权重(0、0.1)，如陈茂波。
 
 # 一些尝试
 * 分词+tfidf+各种调参 成绩0.091左右 效果不好 对比过几种不同分词如哈工大、清华、jieba等，结巴是最好的
@@ -38,5 +39,5 @@ bm25模型定义
 停用词表
 
 # 结果
-![](https://raw.githubusercontent.com/Roc-J/zhaoshang_economic_news/master/photos/results.png)
-# fintech
+![](https://github.com/laidy3/fintech/tree/master/photos/result.jpg)
+
