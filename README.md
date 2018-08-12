@@ -39,5 +39,5 @@ bm25模型定义
 停用词表
 
 # 结果
-![](https://github.com/laidy3/fintech/blob/master/photos/result.jpg)
+![](https://github.com/laidy3/fintech/blob/master/photos/result.png)
 
